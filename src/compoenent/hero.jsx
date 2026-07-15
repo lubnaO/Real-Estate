@@ -5,37 +5,38 @@ import ContactCard from "./contactCard";
 import { motion } from "framer-motion";
 import MotionSection from "./MotionSection";
 
+
 const Hero = () => {
   useEffect(() => {
-    // new FinisherHeader({
-    //   count: 5,
-    //   size: {
-    //     min: 500,
-    //     max: 800,
-    //     pulse: 0,
-    //   },
-    //   speed: {
-    //     x: {
-    //       min: 0,
-    //       max: 0.5,
-    //     },
-    //     y: {
-    //       min: 0,
-    //       max: 0.5,
-    //     },
-    //   },
-    //   colors: {
-    //     background: "#f0fdf4",
-    //     particles: ["#0d542b", "#9cb080"],
-    //   },
-    //   blending: "lighten",
-    //   opacity: {
-    //     center: 0.4,
-    //     edge: 0.15,
-    //   },
-    //   skew: 0,
-    //   shapes: ["t"],
-    // });
+    new FinisherHeader({
+      count: 5,
+      size: {
+        min: 500,
+        max: 800,
+        pulse: 0,
+      },
+      speed: {
+        x: {
+          min: 0,
+          max: 0.5,
+        },
+        y: {
+          min: 0,
+          max: 0.5,
+        },
+      },
+      colors: {
+        background: "#f0fdf4",
+        particles: ["#0d542b", "#9cb080"],
+      },
+      blending: "lighten",
+      opacity: {
+        center: 0.4,
+        edge: 0.15,
+      },
+      skew: 0,
+      shapes: ["t"],
+    });
   });
   return (
     <MotionSection id="hero" className="relative overflow-hidden md:h-screen ">
