@@ -13,7 +13,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <section className={`fixed top-0 z-50 w-full `}>
+    <section className={`fixed top-0 z-50 w-full px-3 `}>
       <nav
         className={`max-w-6xl mx-auto flex items-center justify-between p-1 px-3 md:px-5 ${scroll ? "mt-3 rounded-3xl backdrop-blur-md bg-primary/50" : ""}`}
       >
@@ -21,7 +21,7 @@ const Navbar = () => {
         <img src={assets.royaLogo} className="w-15 px-0 md:px-4 md:w-24" alt="" />
         {/* /*second part */}
         <div
-          className={`${open ? `flex w-full` : `flex w-0 overflow-hidden`} flex-col items-center absolute top-full left-0 py-4 rounded-3xl bg-primary 
+          className={`${open ? `flex w-full mt-2` : `flex w-0 overflow-hidden`} flex-col items-center absolute top-full left-0 py-4 rounded-3xl bg-primary 
        shadow shadow-ink/10 overflow-hidden md:relative md:flex md:flex-row md:items-center md:justify-center md:w-fit md:py-0`}
         >
           {navLinks.map((links) => {

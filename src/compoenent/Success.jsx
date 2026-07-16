@@ -1,10 +1,18 @@
 import React from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-
+import { useEffect } from "react";
 const Success = ({ closeModal }) => {
+    useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
+
   return (
-    <div class="fixed left-0 top-0 flex h-screen px-3 md:px-0 w-full items-center justify-center bg-black/20 py-10">
-      <div class="max-h-full w-full px-2 max-w-xl overflow-y-auto rounded-2xl bg-white">
+    <div class="fixed inset-0 z-50 overflow-hidden bg-black/50 flex items-center justify-center">
+      <div class="relative max-h-full w-full px-2 max-w-xl overflow-y-auto rounded-2xl bg-white">
         <FiX className="absolute mt-1.5 bg-primary text-white rounded-full  cursor-pointer" size={25} onClick={closeModal} />
 
         <div class="w-full">

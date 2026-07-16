@@ -42,7 +42,7 @@ const Hero = () => {
     <MotionSection id="hero" className="relative overflow-hidden md:h-screen ">
       <div className="absolute  header bg-cover bg-center  finisher-header w-full inset-0 "></div>
 
-      <div className="max-w-6xl relative min-h-screen mx-auto px-10 z-10 grid grid-cols-1 gap-8 md:grid-cols-2 items-start pt-40">
+      <div className="max-w-6xl relative min-h-screen mx-auto px-5 z-10 grid grid-cols-1 gap-8 md:grid-cols-2 items-start pt-40">
         <motion.div
           initial={{ opacity: 0, x: 70, filter: "blur(8px)" }}
           animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
